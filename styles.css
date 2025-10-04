@@ -455,10 +455,11 @@ VALUES
     width: 50%;
 }
 
-/* .value__list {
+.value__list {
     display: flex;
     flex-wrap: wrap;
-} NOT WORKING FOR SETTING THEM SIDE BY SIDE?*/
+}
+ /* above NOT WORKING FOR SETTING THEM SIDE BY SIDE? */
 
 .value {
     display: flex;
