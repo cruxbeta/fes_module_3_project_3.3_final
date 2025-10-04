@@ -511,15 +511,6 @@ PRICING
 
 */
 
-#pricing .row {
-    display: flex;
-    flex-direction: column;
-    /* width: 100%; */
-    /* max-width: 1024px; */
-    /* margin: 0 auto; */
-    align-items: center;
-}
-
 .pricing__text {
     display: flex;
     flex-direction: column;
@@ -533,7 +524,9 @@ PRICING
 }
 
 .pricing__plans {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pricing__plan {
@@ -548,22 +541,30 @@ PRICING
     position: relative;
 }
 
+.plan__stripe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    right: 0;
+    top: 0;
+    height: 8px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    z-index: 2;
+}
+
 .plan__top {
     display: flex;
     flex-direction: column;
-    height: 100px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 96px;
-    /* NOT SURE HOW IMPORTANT, LIKELY NEEDED FOR WRAP WHEN OTHER PLANS ARE ADDED
-    position: relative; */
-    margin-top: 2rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    padding-bottom: 4rem;
+    position: relative;
+    padding-bottom: 2rem;
     padding-top: 2rem; 
-    max-width: 24rem;
     border-radius: 4px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    z-index: 1;
 }
 
 .plan__name--dark,
@@ -576,7 +577,6 @@ PRICING
 .plan__name--dark {
     font-size: 20px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .plan__price--dark {
@@ -588,7 +588,6 @@ PRICING
     font-size: 16px;
     font-weight: 700;
     color: #a0aec0;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
@@ -619,10 +618,12 @@ PRICING
 .plan__bottom {
     margin-left: 4rem;
     margin-right: 4rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    max-height: 2.7rem;
 }
 
 .buy-now__btn {
@@ -632,7 +633,36 @@ PRICING
     border: none;
     border-radius: 100px;
     height: 3rem;
-    width: 100%;
+    width: 12rem;
     /* width relative to container */
-    background-color: linear-gradient(115deg, rgba(56, 178, 172) 0%, rgba(129, 230, 217) 100%;
+}
+
+.pricing__plan:nth-child(2) {
+    background: linear-gradient(135deg, rgba(76, 81, 191) 0%, rgba(102, 136, 234) 100%);
+}
+
+.white {
+    color: #f7fafc;
+}
+
+.pricing__plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgba(102, 125, 234);
+    border-bottom: 2px solid rgba(102, 125, 234);
+}
+
+.pricing__plan:nth-child(1) .buy-now__btn,
+.pricing__plan:nth-child(1) .plan__stripe {
+    background: linear-gradient(115deg, rgba(56, 178, 172) 0%, rgba(129, 230, 217) 100%);
+    color: #f7fafc;
+}
+
+.pricing__plan:nth-child(2) .buy-now__btn{
+    background: #fff;
+    color: #6415ff;
+}
+
+.pricing__plan:nth-child(3) .plan__stripe,
+.pricing__plan:nth-child(3) .buy-now__btn{
+    background: linear-gradient(115deg, rgba(245, 101, 101) 0%, rgba(254, 178, 178) 100%);
+    color: #f7fafc;
 }
