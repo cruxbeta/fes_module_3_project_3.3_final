@@ -539,6 +539,13 @@ PRICING
 .pricing__plan {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    width: 100%;
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    padding-top: 2rem; 
+    position: relative;
 }
 
 .plan__top {
@@ -550,7 +557,7 @@ PRICING
     margin-bottom: 96px;
     /* NOT SURE HOW IMPORTANT, LIKELY NEEDED FOR WRAP WHEN OTHER PLANS ARE ADDED
     position: relative; */
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-right: 2rem;
     margin-left: 2rem;
     padding-bottom: 4rem;
@@ -591,8 +598,8 @@ PRICING
     align-items: center;
     border-top: 2px solid rgba(229, 231, 235); 
     border-bottom: 2px solid rgba(229, 231, 235); 
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -611,9 +618,9 @@ PRICING
 
 .plan__bottom {
     margin-left: 4rem;
-    margin-left: 4rem;
+    margin-right: 4rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
 }
@@ -627,6 +634,5 @@ PRICING
     height: 3rem;
     width: 100%;
     /* width relative to container */
-    
     background-color: linear-gradient(115deg, rgba(56, 178, 172) 0%, rgba(129, 230, 217) 100%;
 }
