@@ -93,7 +93,7 @@ button {
     border-radius: 100px;
     font-size: 14px;
     font-weight: 600;
-    margin: 0 auto;
+    width: max-content;
 }
 
 /* 
@@ -381,5 +381,117 @@ QUALITY
 
 #quality .img--wrapper,
 .quality__description {
-    max-width: 50%;
+    width: 50%;
 }
+
+/* 
+
+STEPS
+
+ */
+
+ #steps .row {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .steps .step__img--wrapper,
+ .step__text {
+    width: 50%;
+ }
+
+ .steps__img--wrapper {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+ }
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    font-size: 36px;
+    font-weight: 600;
+    color: #cbd5e0;
+}
+
+.step__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+ .step__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+ }
+
+ .step__para {
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+    line-height: 2;
+ }
+
+/* 
+
+VALUES
+
+ */
+
+#values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__img--wrapper,
+.values__text {
+    width: 50%;
+}
+
+/* .value__list {
+    display: flex;
+    flex-wrap: wrap;
+} NOT WORKING FOR SETTING THEM SIDE BY SIDE?*/
+
+.value {
+    display: flex;
+    flex-direction: column;
+}
+
+.values__text {
+    
+}
+
+.value__title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.value__sym--money {
+    background-color: #9ae6b4;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.value__sym--breifcase {
+    background-color: #feb2b2;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.value__name {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
