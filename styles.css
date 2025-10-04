@@ -455,11 +455,11 @@ VALUES
     width: 50%;
 }
 
-.value__list {
+.values__list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
 }
- /* above NOT WORKING FOR SETTING THEM SIDE BY SIDE? */
 
 .value {
     display: flex;
@@ -467,7 +467,7 @@ VALUES
 }
 
 .values__text {
-    
+    max-width: 576px;
 }
 
 .value__title {
@@ -478,14 +478,14 @@ VALUES
 
 .value__sym--money {
     background-color: #9ae6b4;
-    height: 35px;
+    height: 36px;
     padding: 10px;
     border-radius: 50%;
 }
 
 .value__sym--breifcase {
     background-color: #feb2b2;
-    height: 35px;
+    height: 36px;
     padding: 10px;
     border-radius: 50%;
 }
@@ -496,3 +496,134 @@ VALUES
     padding-left: 10px;
 }
 
+.value__para {
+    color: #718096;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    margin-right: 36px;
+    left: 0;
+    line-height: 1.5;
+}
+
+/*
+
+PRICING 
+
+*/
+
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* max-width: 1024px; */
+    /* margin: 0 auto; */
+    align-items: center;
+}
+
+.pricing__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .section__para {
+    max-width: 570px;
+    text-align: center;
+    padding-bottom: 56px;
+}
+
+.pricing__plans {
+
+}
+
+.pricing__plan {
+
+}
+
+.plan__top {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    /* 
+    position: relative;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem; 
+    max-width: 24rem;
+    border-radius: 4px;*/
+}
+
+.plan__name--dark,
+.plan__price--dark,
+.pricing__plan-tag--dark {
+    color: #1a202c;
+    line-height: 1.65;
+}
+
+.plan__name--dark {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.plan__price--dark {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.plan__duration--dark {
+    font-size: 16px;
+    font-weight: 700;
+    color: #a0aec0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.plan__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2rem;
+    border-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.pricing__plan-tag--dark {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan__feature {
+    font-size: 16px;
+    font-weight: 500;
+    color: #718096;
+    margin-top: 20px;
+}
+
+.plan__bottom {
+    margin-left: 4rem;
+    margin-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.buy-now__btn {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 100px;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    background-color: linear-gradient(115deg, rgba(56, 178, 172) 0%, rgba(129, 230, 217) 100%;
+}
