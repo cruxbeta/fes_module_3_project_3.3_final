@@ -852,7 +852,7 @@ START
     margin-right: 32px;
 }
 
-.start__btn:nth-child(1) {
+.start__btn:nth-child(2) {
     border: 1px solid rgba(160, 174, 192);
     background-color: #6415ff;
 }
