@@ -936,14 +936,19 @@ footer .row {
 .cat__link:after {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: -6px;
+    right: 0;
+    bottom: 1px;
     height: 2px;
-    width: 100%;
-    color: #fff;
+    width: 0;
+    background-color: #fff;
     opacity: 1;
-    transition: all 300ms ease;
+    transition: all 0ms ease-in-out;
     z-index: 3;
+}
+
+.cat__link:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .cat__title,
@@ -1002,3 +1007,10 @@ footer .row {
 .footer__social--icon:hover {
     background-color: rgba(203, 213, 224);
 }
+
+/*
+
+RESPONSIVITY
+
+*/
+
