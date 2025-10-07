@@ -1266,8 +1266,13 @@ RESPONSIVITY
     }
 
     .feature {
-        width: auto;
+        width: 100%;
         max-width: 384px;
+    }
+
+    .feature__row {
+        display: flex;
+        flex-direction: column;
     }
 
     #quality .row, #values .row {
@@ -1477,10 +1482,6 @@ RESPONSIVITY
 
     .header__description--para {
         font-size: 16px;
-    }
-
-    .header__customers--img {
-        padding-right: 64px;
     }
 
     .header__img--wrapper {
