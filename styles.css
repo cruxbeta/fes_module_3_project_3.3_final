@@ -284,7 +284,6 @@ header .row {
 
 .header__description {
   width: 40%;
-  margin: 0 auto;
 }
 
 .header__description--para {
@@ -1287,7 +1286,7 @@ RESPONSIVITY
         text-align: center;
     }
 
-    #steps .row, {
+    #steps .row {
         flex-direction: column;
     }
 
